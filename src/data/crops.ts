@@ -2,12 +2,12 @@ import { Crop } from '../types/crop';
 
 // Accurate Andhra Pradesh crop data based on 2023-24 agricultural statistics
 // Source: AP Agriculture Department, APMARKFED, and field surveys
-export const andhrapradeShCrops: Crop[] = [
+export const crops: Crop[] = [
   {
     id: '1',
     name: 'Rice',
     localName: 'వరి (Vari)',
-    image: '/rice.webp',
+    image: '/Ripening-heads-rice-Oryza-sativa.jpg',
     growthPeriod: 120,
     season: 'Kharif',
     seedCost: 45,
@@ -30,7 +30,7 @@ export const andhrapradeShCrops: Crop[] = [
     id: '2',
     name: 'Cotton',
     localName: 'పత్తి (Patti)',
-    image: '/cotton.avif',
+    image: '/istockphoto-492878652-612x612.jpg',
     growthPeriod: 180,
     season: 'Kharif',
     seedCost: 380,
@@ -53,7 +53,7 @@ export const andhrapradeShCrops: Crop[] = [
     id: '3',
     name: 'Sugarcane',
     localName: 'చెరకు (Cheraku)',
-    image: '/sugarcane.avif',
+    image: '/sugarcane.jpg',
     growthPeriod: 365,
     season: 'Annual',
     seedCost: 8000,
@@ -76,7 +76,7 @@ export const andhrapradeShCrops: Crop[] = [
     id: '4',
     name: 'Groundnut',
     localName: 'వేరుశెనగ (Verushenaga)',
-    image: '/groundnut.png',
+    image: '/Unlock-the-Secrets-of-Groundnut-Farming-5.jpg',
     growthPeriod: 110,
     season: 'Kharif/Rabi',
     seedCost: 85,
@@ -99,7 +99,7 @@ export const andhrapradeShCrops: Crop[] = [
     id: '5',
     name: 'Chilli',
     localName: 'మిర్చి (Mirchi)',
-    image: '/chilli.webp',
+    image: '/close_up_chilli_plant.jpg',
     growthPeriod: 150,
     season: 'Kharif',
     seedCost: 1200,
@@ -145,7 +145,7 @@ export const andhrapradeShCrops: Crop[] = [
     id: '7',
     name: 'Maize',
     localName: 'మొక్కజొన్న (Mokkajonna)',
-    image: 'https://images.unsplash.com/photo-1551754655-cd27e38d2076?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80',
+    image: '/PAN_4R-728BR_2020.jpg',
     growthPeriod: 110,
     season: 'Kharif/Rabi',
     seedCost: 280,
@@ -168,7 +168,7 @@ export const andhrapradeShCrops: Crop[] = [
     id: '8',
     name: 'Tomato',
     localName: 'టమాటో (Tamato)',
-    image: 'https://images.unsplash.com/photo-1592924357228-91a4daadcfea?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80',
+    image: '/tomato.jpg',
     growthPeriod: 120,
     season: 'Rabi',
     seedCost: 3500,
@@ -191,7 +191,7 @@ export const andhrapradeShCrops: Crop[] = [
     id: '9',
     name: 'Mango',
     localName: 'మామిడి (Mamidi)',
-    image: 'https://images.unsplash.com/photo-1553279768-865429fa0078?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80',
+    image: '/alphonsomango.jpg',
     growthPeriod: 1095,
     season: 'Perennial',
     seedCost: 150,
@@ -214,7 +214,7 @@ export const andhrapradeShCrops: Crop[] = [
     id: '10',
     name: 'Onion',
     localName: 'ఉల్లిపాయ (Ullipaya)',
-    image: 'https://images.unsplash.com/photo-1618512496248-a07fe83aa8cb?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80',
+    image: '/onion.jpg',
     growthPeriod: 120,
     season: 'Rabi',
     seedCost: 2800,
@@ -237,7 +237,7 @@ export const andhrapradeShCrops: Crop[] = [
     id: '11',
     name: 'Sunflower',
     localName: 'సూర్యకాంతి (Suryakanti)',
-    image: '/sunflower.jpg',
+    image: '/1920-x-1280-2.jpg',
     growthPeriod: 90,
     season: 'Rabi',
     seedCost: 450,
@@ -260,7 +260,7 @@ export const andhrapradeShCrops: Crop[] = [
     id: '12',
     name: 'Black Gram',
     localName: 'మినుములు (Minumulu)',
-    image: '/blackgram.jpg',
+    image: '/Boost-Black-Gram-Yield1-1024x684.jpg',
     growthPeriod: 75,
     season: 'Kharif/Summer',
     seedCost: 95,
@@ -281,5 +281,3 @@ export const andhrapradeShCrops: Crop[] = [
   }
 ];
 
-// Export alias for compatibility
-export const crops = andhrapradeShCrops;

@@ -17,7 +17,18 @@ const CropCard: React.FC<CropCardProps> = ({ crop, compact = false, expanded = f
       <div className="bg-gradient-to-br from-white to-gray-50 border border-gray-200 rounded-xl p-6 shadow-md hover:shadow-lg transition-all duration-300">
         <div className="flex items-center gap-3 mb-2">
           <div className="w-12 h-12 rounded-full overflow-hidden bg-green-100 flex-shrink-0">
-            <img src={crop.image} alt={crop.name} className="w-full h-full object-cover" />
+            {crop.image ? (
+              <img 
+                src={crop.image} 
+                alt={crop.name} 
+                className="w-full h-full object-cover" 
+                loading="eager"
+              />
+            ) : (
+              <div className="w-full h-full flex items-center justify-center">
+                <Sprout className="w-6 h-6 text-green-600" />
+              </div>
+            )}
           </div>
           <div>
             <h3 className="font-bold text-gray-800">{crop.name}</h3>
@@ -88,7 +99,18 @@ const CropCard: React.FC<CropCardProps> = ({ crop, compact = false, expanded = f
       <div className="bg-gradient-to-r from-green-600 to-green-700 text-white p-6">
         <div className="flex items-center gap-4">
           <div className="w-16 h-16 rounded-full overflow-hidden bg-white/20 backdrop-blur-sm flex-shrink-0">
-            <img src={crop.image} alt={crop.name} className="w-full h-full object-cover" />
+            {crop.image ? (
+              <img 
+                src={crop.image} 
+                alt={crop.name} 
+                className="w-full h-full object-cover" 
+                loading="eager"
+              />
+            ) : (
+              <div className="w-full h-full flex items-center justify-center">
+                <Sprout className="w-8 h-8 text-white" />
+              </div>
+            )}
           </div>
           <div>
             <h2 className="text-2xl font-bold">{crop.name}</h2>
