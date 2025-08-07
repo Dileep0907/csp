@@ -23,12 +23,16 @@ const CropCard: React.FC<CropCardProps> = ({ crop, compact = false, expanded = f
                 alt={crop.name} 
                 className="w-full h-full object-cover" 
                 loading="eager"
+                onError={(e) => {
+                  console.log('Image failed to load:', crop.image);
+                  const target = e.target as HTMLImageElement;
+                  target.style.display = 'none';
+                }}
               />
-            ) : (
-              <div className="w-full h-full flex items-center justify-center">
-                <Sprout className="w-6 h-6 text-green-600" />
-              </div>
-            )}
+            ) : null}
+            <div className="w-full h-full flex items-center justify-center">
+              <Sprout className="w-6 h-6 text-green-600" />
+            </div>
           </div>
           <div>
             <h3 className="font-bold text-gray-800">{crop.name}</h3>
@@ -105,12 +109,16 @@ const CropCard: React.FC<CropCardProps> = ({ crop, compact = false, expanded = f
                 alt={crop.name} 
                 className="w-full h-full object-cover" 
                 loading="eager"
+                onError={(e) => {
+                  console.log('Image failed to load:', crop.image);
+                  const target = e.target as HTMLImageElement;
+                  target.style.display = 'none';
+                }}
               />
-            ) : (
-              <div className="w-full h-full flex items-center justify-center">
-                <Sprout className="w-8 h-8 text-white" />
-              </div>
-            )}
+            ) : null}
+            <div className="w-full h-full flex items-center justify-center">
+              <Sprout className="w-8 h-8 text-white" />
+            </div>
           </div>
           <div>
             <h2 className="text-2xl font-bold">{crop.name}</h2>
